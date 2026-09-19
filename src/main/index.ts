@@ -1,6 +1,7 @@
 import { join } from 'node:path'
 import { app, BrowserWindow, shell } from 'electron'
 import { electronApp, is, optimizer } from '@electron-toolkit/utils'
+import 'dotenv/config'
 import { runMigrations } from './db'
 import { registerIpcHandlers } from './ipc'
 
